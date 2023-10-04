@@ -1,19 +1,26 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Webapi.Authenticate;
 using WebDataModel.BaseClass;
 using WebDataModel.ViewModel;
 using WebService.Interface;
 
 namespace Webapi.Controllers
 {
+
     [Route("api/user")]
+    [Authorize]
     [ApiController]
-    public class UsersController : BaseController
+    public class UsersController : ControllerBase
     {
         private readonly IUserService _userService;
+        private readonly IAuthenticate _authenticate;
 
-        public UsersController(IUserService userService)
+        public UsersController(IUserService userService, 
+            IAuthenticate authenticate)
         {
             _userService = userService;
+            _authenticate = authenticate;
         }
 
         [HttpGet("getuser")]
@@ -46,6 +53,13 @@ namespace Webapi.Controllers
         public async Task<IActionResult> Del(int id)
         {
             return Ok(await _userService.Delete(id));
+        }
+        [AllowAnonymous]
+        [HttpPost("login")]
+        //[ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login([FromBody] UserLogin uservm)
+        {
+            return Ok(await _authenticate.AuthenticateUser(uservm));
         }
     }
 }

@@ -1,0 +1,163 @@
+2023-10-04T05:22:29.6888220+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-10-04T05:22:29.6923079+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-10-04T05:22:29.6927139+07:00  [INF] Content root path: "F:\webapiadmin\Webapi" (cc26f24e)
+2023-10-04T05:23:00.4720507+07:00 80000002-0002-fa00-b63f-84710c7967bb [INF] Request "GET" "/api/user/getuser" => 200 (b9f40507)
+2023-10-04T05:23:01.6980279+07:00 80000002-0002-fa00-b63f-84710c7967bb [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2023-10-04T05:23:01.6993233+07:00 80000002-0002-fa00-b63f-84710c7967bb [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2023-10-04T05:23:02.3298510+07:00 80000002-0002-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("83"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[Name], [u].[Email], [u].[Password], [u].[Birthday], [u].[Age], [u].[Sex]
+FROM [Userviews] AS [u]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2023-10-04T05:23:46.3183449+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-10-04T05:23:46.3208543+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-10-04T05:23:46.3213612+07:00  [INF] Content root path: "F:\webapiadmin\Webapi" (cc26f24e)
+2023-10-04T05:23:57.7676252+07:00 8000001c-0003-fa00-b63f-84710c7967bb [INF] Request "GET" "/api/user/getuser" => 200 (b9f40507)
+2023-10-04T05:23:58.3852676+07:00 8000001c-0003-fa00-b63f-84710c7967bb [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2023-10-04T05:23:58.3861283+07:00 8000001c-0003-fa00-b63f-84710c7967bb [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2023-10-04T05:23:58.6210268+07:00 8000001c-0003-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("28"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[Name], [u].[Email], [u].[Password], [u].[Birthday], [u].[Age], [u].[Sex]
+FROM [Userviews] AS [u]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2023-10-04T05:24:33.8093300+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-10-04T05:24:33.8118704+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-10-04T05:24:33.8121503+07:00  [INF] Content root path: "F:\webapiadmin\Webapi" (cc26f24e)
+2023-10-04T05:25:47.3690621+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-10-04T05:25:47.3720645+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-10-04T05:25:47.3725599+07:00  [INF] Content root path: "F:\webapiadmin\Webapi" (cc26f24e)
+2023-10-04T05:25:56.1345674+07:00 80000002-0003-f900-b63f-84710c7967bb [INF] Request "GET" "/api/user/getuser" => 200 (b9f40507)
+2023-10-04T05:25:56.7400978+07:00 80000002-0003-f900-b63f-84710c7967bb [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2023-10-04T05:25:56.7411884+07:00 80000002-0003-f900-b63f-84710c7967bb [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2023-10-04T05:25:56.9858670+07:00 80000002-0003-f900-b63f-84710c7967bb [INF] Executed DbCommand ("29"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[Name], [u].[Email], [u].[Password], [u].[Birthday], [u].[Age], [u].[Sex]
+FROM [Userviews] AS [u]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2023-10-04T05:26:33.4298556+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-10-04T05:26:33.4327709+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-10-04T05:26:33.4330543+07:00  [INF] Content root path: "F:\webapiadmin\Webapi" (cc26f24e)
+2023-10-04T05:26:41.4062297+07:00 8000001f-0002-fc00-b63f-84710c7967bb [INF] Request "GET" "/api/user/getuser" => 200 (b9f40507)
+2023-10-04T05:26:41.9913380+07:00 8000001f-0002-fc00-b63f-84710c7967bb [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2023-10-04T05:26:41.9922782+07:00 8000001f-0002-fc00-b63f-84710c7967bb [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2023-10-04T05:26:42.2299483+07:00 8000001f-0002-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("29"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[Name], [u].[Email], [u].[Password], [u].[Birthday], [u].[Age], [u].[Sex]
+FROM [Userviews] AS [u]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2023-10-04T05:28:40.8765297+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-10-04T05:28:40.8823060+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-10-04T05:28:40.9007179+07:00  [INF] Content root path: "F:\webapiadmin\Webapi" (cc26f24e)
+2023-10-04T05:28:50.7204516+07:00 80000023-0002-fc00-b63f-84710c7967bb [INF] Request "GET" "/api/user/getuser" => 200 (b9f40507)
+2023-10-04T05:28:51.3254917+07:00 80000023-0002-fc00-b63f-84710c7967bb [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2023-10-04T05:28:51.3264642+07:00 80000023-0002-fc00-b63f-84710c7967bb [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2023-10-04T05:28:51.5628282+07:00 80000023-0002-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("29"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[Name], [u].[Email], [u].[Password], [u].[Birthday], [u].[Age], [u].[Sex]
+FROM [Userviews] AS [u]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2023-10-04T05:29:30.8250514+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-10-04T05:29:30.8296516+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-10-04T05:29:30.8304403+07:00  [INF] Content root path: "F:\webapiadmin\Webapi" (cc26f24e)
+2023-10-04T05:30:22.3241268+07:00 80000027-0002-fc00-b63f-84710c7967bb [INF] Request "GET" "/api/user/getuser" => 200 (b9f40507)
+2023-10-04T05:30:22.9565172+07:00 80000027-0002-fc00-b63f-84710c7967bb [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2023-10-04T05:30:22.9575397+07:00 80000027-0002-fc00-b63f-84710c7967bb [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. (5b3e5b60)
+2023-10-04T05:30:23.2226591+07:00 80000027-0002-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("33"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[Name], [u].[Email], [u].[Password], [u].[Birthday], [u].[Age], [u].[Sex]
+FROM [Userviews] AS [u]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2023-10-04T05:32:34.8960119+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-10-04T05:32:34.8991450+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-10-04T05:32:34.8997070+07:00  [INF] Content root path: "F:\webapiadmin\Webapi" (cc26f24e)
+2023-10-04T05:34:14.4239748+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-10-04T05:34:14.4352928+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-10-04T05:34:14.4370329+07:00  [INF] Content root path: "F:\webapiadmin\Webapi" (cc26f24e)
+2023-10-04T05:39:30.6729290+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-10-04T05:39:30.6842950+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-10-04T05:39:30.6866570+07:00  [INF] Content root path: "F:\webapiadmin\Webapi" (cc26f24e)
+2023-10-04T05:41:15.2102299+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-10-04T05:41:15.2233369+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-10-04T05:41:15.2253444+07:00  [INF] Content root path: "F:\webapiadmin\Webapi" (cc26f24e)
+2023-10-04T06:35:04.6740274+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-10-04T06:35:04.6767125+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-10-04T06:35:04.6770162+07:00  [INF] Content root path: "F:\webapiadmin\Webapi" (cc26f24e)
+2023-10-04T06:35:37.0701561+07:00 80000002-0003-f700-b63f-84710c7967bb [INF] Request "POST" "/api/user/login" => 200 (b9f40507)
+2023-10-04T06:36:11.3245751+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-10-04T06:36:11.3291162+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-10-04T06:36:11.3345151+07:00  [INF] Content root path: "F:\webapiadmin\Webapi" (cc26f24e)
+2023-10-04T06:40:06.3016330+07:00 8000001d-0002-fb00-b63f-84710c7967bb [INF] Request "POST" "/api/user/login" => 200 (b9f40507)
+2023-10-04T06:41:08.0326134+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-10-04T06:41:08.0733486+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-10-04T06:41:08.0758875+07:00  [INF] Content root path: "F:\webapiadmin\Webapi" (cc26f24e)
+2023-10-04T06:41:27.0261074+07:00 80000086-0000-fd00-b63f-84710c7967bb [INF] Request "POST" "/api/user" => 200 (b9f40507)
+2023-10-04T06:42:46.1791111+07:00  [INF] Now listening on: "https://localhost:7043" (d826f4b8)
+2023-10-04T06:42:46.1830348+07:00  [INF] Now listening on: "http://localhost:5017" (d826f4b8)
+2023-10-04T06:42:46.2169113+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-10-04T06:42:46.2242046+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-10-04T06:42:46.2259945+07:00  [INF] Content root path: "F:\webapiadmin\Webapi" (cc26f24e)
+2023-10-04T06:43:06.0736927+07:00 0HMU4D9P3KBOP:00000009 [INF] Request "POST" "/api/user/login" => 200 (b9f40507)
+2023-10-04T06:43:18.0560156+07:00 0HMU4D9P3KBOP:00000009 [INF] Executed DbCommand ("62"ms) [Parameters=["@__userLogin_UserName_0='?' (Size = 255)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[Id], [u].[Age], [u].[Birthday], [u].[Email], [u].[Name], [u].[Password], [u].[Sex]
+FROM [Userviews] AS [u]
+WHERE [u].[Name] = @__userLogin_UserName_0" (0723d8ff)
+2023-10-04T06:44:02.0418347+07:00 0HMU4D9P3KBOP:0000000B [INF] Request "POST" "/api/user/login" => 200 (b9f40507)
+2023-10-04T06:44:05.2086391+07:00 0HMU4D9P3KBOP:0000000B [INF] Executed DbCommand ("23"ms) [Parameters=["@__userLogin_UserName_0='?' (Size = 255)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[Id], [u].[Age], [u].[Birthday], [u].[Email], [u].[Name], [u].[Password], [u].[Sex]
+FROM [Userviews] AS [u]
+WHERE [u].[Name] = @__userLogin_UserName_0" (0723d8ff)
+2023-10-04T06:46:55.3689652+07:00  [INF] Now listening on: "https://localhost:7043" (d826f4b8)
+2023-10-04T06:46:55.3728181+07:00  [INF] Now listening on: "http://localhost:5017" (d826f4b8)
+2023-10-04T06:46:55.3770512+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-10-04T06:46:55.3846033+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-10-04T06:46:55.3876339+07:00  [INF] Content root path: "F:\webapiadmin\Webapi" (cc26f24e)
+2023-10-04T06:47:08.8693084+07:00 0HMU4DC3DG1DK:00000009 [INF] Request "POST" "/api/user/login" => 200 (b9f40507)
+2023-10-04T06:47:12.2633029+07:00 0HMU4DC3DG1DK:00000009 [INF] Executed DbCommand ("65"ms) [Parameters=["@__userLogin_UserName_0='?' (Size = 255)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[Id], [u].[Age], [u].[Birthday], [u].[Email], [u].[Name], [u].[Password], [u].[Sex]
+FROM [Userviews] AS [u]
+WHERE [u].[Name] = @__userLogin_UserName_0" (0723d8ff)
+2023-10-04T06:49:14.1668445+07:00  [INF] Now listening on: "https://localhost:7043" (d826f4b8)
+2023-10-04T06:49:14.1703524+07:00  [INF] Now listening on: "http://localhost:5017" (d826f4b8)
+2023-10-04T06:49:14.2132236+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-10-04T06:49:14.2147258+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-10-04T06:49:14.2158981+07:00  [INF] Content root path: "F:\webapiadmin\Webapi" (cc26f24e)
+2023-10-04T06:49:26.0675118+07:00 0HMU4DDCM26S1:00000009 [INF] Request "POST" "/api/user/login" => 200 (b9f40507)
+2023-10-04T06:49:30.5131928+07:00 0HMU4DDCM26S1:00000009 [INF] Executed DbCommand ("46"ms) [Parameters=["@__userLogin_UserName_0='?' (Size = 255)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[Id], [u].[Age], [u].[Birthday], [u].[Email], [u].[Name], [u].[Password], [u].[Sex]
+FROM [Userviews] AS [u]
+WHERE [u].[Name] = @__userLogin_UserName_0" (0723d8ff)
+2023-10-04T06:51:12.5662481+07:00  [INF] Now listening on: "https://localhost:7043" (d826f4b8)
+2023-10-04T06:51:12.5688124+07:00  [INF] Now listening on: "http://localhost:5017" (d826f4b8)
+2023-10-04T06:51:12.5721357+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-10-04T06:51:12.5723316+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-10-04T06:51:12.5723675+07:00  [INF] Content root path: "F:\webapiadmin\Webapi" (cc26f24e)
+2023-10-04T06:51:26.6016409+07:00 0HMU4DEFVJ9BR:00000009 [INF] Request "POST" "/api/user/login" => 200 (b9f40507)
+2023-10-04T06:51:27.4614169+07:00 0HMU4DEFVJ9BR:00000009 [INF] Executed DbCommand ("38"ms) [Parameters=["@__userLogin_UserName_0='?' (Size = 255)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[Id], [u].[Age], [u].[Birthday], [u].[Email], [u].[Name], [u].[Password], [u].[Sex]
+FROM [Userviews] AS [u]
+WHERE [u].[Name] = @__userLogin_UserName_0" (0723d8ff)
+2023-10-04T06:55:41.1217585+07:00  [INF] Now listening on: "https://localhost:7043" (d826f4b8)
+2023-10-04T06:55:41.1241323+07:00  [INF] Now listening on: "http://localhost:5017" (d826f4b8)
+2023-10-04T06:55:41.1263454+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-10-04T06:55:41.1264891+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-10-04T06:55:41.1265123+07:00  [INF] Content root path: "F:\webapiadmin\Webapi" (cc26f24e)
+2023-10-04T06:55:57.8527311+07:00 0HMU4DH00BSSQ:00000009 [INF] Request "POST" "/api/user/login" => 200 (b9f40507)
+2023-10-04T06:55:58.7156970+07:00 0HMU4DH00BSSQ:00000009 [INF] Executed DbCommand ("40"ms) [Parameters=["@__userLogin_UserName_0='?' (Size = 255)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[Id], [u].[Age], [u].[Birthday], [u].[Email], [u].[Name], [u].[Password], [u].[Sex]
+FROM [Userviews] AS [u]
+WHERE [u].[Name] = @__userLogin_UserName_0" (0723d8ff)
+2023-10-04T06:56:54.1238721+07:00 0HMU4DH00BSSS:00000001 [INF] Request "POST" "/api/user/login" => 200 (b9f40507)
+2023-10-04T06:56:54.1687160+07:00 0HMU4DH00BSSS:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userLogin_UserName_0='?' (Size = 255)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[Id], [u].[Age], [u].[Birthday], [u].[Email], [u].[Name], [u].[Password], [u].[Sex]
+FROM [Userviews] AS [u]
+WHERE [u].[Name] = @__userLogin_UserName_0" (0723d8ff)
+2023-10-04T06:59:39.5408470+07:00  [INF] Now listening on: "https://localhost:7043" (d826f4b8)
+2023-10-04T06:59:39.5443447+07:00  [INF] Now listening on: "http://localhost:5017" (d826f4b8)
+2023-10-04T06:59:39.5482857+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-10-04T06:59:39.5485354+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-10-04T06:59:39.5485757+07:00  [INF] Content root path: "F:\webapiadmin\Webapi" (cc26f24e)
+2023-10-04T06:59:47.4285951+07:00 0HMU4DJ74NJHD:00000001 [INF] Request "POST" "/api/user/login" => 200 (b9f40507)
+2023-10-04T06:59:48.2938585+07:00 0HMU4DJ74NJHD:00000001 [INF] Executed DbCommand ("29"ms) [Parameters=["@__userLogin_UserName_0='?' (Size = 255)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[Id], [u].[Age], [u].[Birthday], [u].[Email], [u].[Name], [u].[Password], [u].[Sex]
+FROM [Userviews] AS [u]
+WHERE [u].[Name] = @__userLogin_UserName_0" (0723d8ff)

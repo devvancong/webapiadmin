@@ -198,3 +198,4 @@ F:\webapiadmin\Webapi\obj\Debug\net7.0\refint\Webapi.dll
 F:\webapiadmin\Webapi\obj\Debug\net7.0\Webapi.pdb
 F:\webapiadmin\Webapi\obj\Debug\net7.0\Webapi.genruntimeconfig.cache
 F:\webapiadmin\Webapi\obj\Debug\net7.0\ref\Webapi.dll
+F:\webapiadmin\Webapi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
