@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Webapi.Authenticate;
@@ -45,7 +46,6 @@ namespace Webapi.Configuration
             services.AddAuthentication(x =>
             {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             }).AddJwtBearer(o =>
             {
                 var Key = Encoding.UTF8.GetBytes(configuration["JWT:Key"]);
@@ -61,6 +61,7 @@ namespace Webapi.Configuration
                     IssuerSigningKey = new SymmetricSecurityKey(Key)
                 };
             });
+            services.AddAuthorization();
 
             return services;
         }

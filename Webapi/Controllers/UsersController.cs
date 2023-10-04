@@ -9,9 +9,7 @@ namespace Webapi.Controllers
 {
 
     [Route("api/user")]
-    [Authorize]
-    [ApiController]
-    public class UsersController : ControllerBase
+    public class UsersController : BaseController
     {
         private readonly IUserService _userService;
         private readonly IAuthenticate _authenticate;
@@ -36,14 +34,12 @@ namespace Webapi.Controllers
         }
 
         [HttpPost("adduser")]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Add([FromBody] Uservm uservm)
         {
             return Ok(await _userService.AddUser(uservm));
         }
 
         [HttpPut("edituser")]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit([FromBody] Uservm uservm)
         {
             return Ok(await _userService.UpdateUser(uservm));
@@ -56,7 +52,6 @@ namespace Webapi.Controllers
         }
         [AllowAnonymous]
         [HttpPost("login")]
-        //[ValidateAntiForgeryToken]
         public async Task<IActionResult> Login([FromBody] UserLogin uservm)
         {
             return Ok(await _authenticate.AuthenticateUser(uservm));

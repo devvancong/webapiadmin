@@ -56,8 +56,8 @@ namespace Webapi.Authenticate
 
         public string GenerateAccessToken(IEnumerable<Claim> claims)
         {
-            //var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_iconfiguration["JWT:Key"]));
-            var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(@"kSgAb2s}q*\r\nsqXG/5XC-H\r\nY!d23*kNcz\r\neqbaXm%0P2\r\n$J_8k%FFk_\r\n}/d-M5NYFd\r\nte!eCnBD4q\r\nGj}d-Ct9S$\r\nzH=Kk_jkS5\r\ndJtwd-9*Yn"));
+            var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_iconfiguration["JWT:Key"]));
+            //var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(@"ntFEJVHw@Pq1RwI-Kt4L&Y9GCQ#Tia2$2PY39=rpRNrzEQlBuSX#^EL0Rwpt^$l_y^Pf=G"));
             var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256Signature);
             var tokeOptions = new JwtSecurityToken(
                 issuer: _iconfiguration["JWT:Issuer"],
@@ -87,7 +87,7 @@ namespace Webapi.Authenticate
                 ValidateAudience = false,
                 ValidateIssuer = false,
                 ValidateIssuerSigningKey = true,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(@"kSgAb2s}q*\r\nsqXG/5XC-H\r\nY!d23*kNcz\r\neqbaXm%0P2\r\n$J_8k%FFk_\r\n}/d-M5NYFd\r\nte!eCnBD4q\r\nGj}d-Ct9S$\r\nzH=Kk_jkS5\r\ndJtwd-9*Yn")),
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_iconfiguration["JWT:Key"])),
                 ValidateLifetime = false
             };
             var tokenHandler = new JwtSecurityTokenHandler();
