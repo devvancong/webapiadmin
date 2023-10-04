@@ -57,7 +57,6 @@ namespace Webapi.Authenticate
         public string GenerateAccessToken(IEnumerable<Claim> claims)
         {
             var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_iconfiguration["JWT:Key"]));
-            //var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(@"ntFEJVHw@Pq1RwI-Kt4L&Y9GCQ#Tia2$2PY39=rpRNrzEQlBuSX#^EL0Rwpt^$l_y^Pf=G"));
             var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256Signature);
             var tokeOptions = new JwtSecurityToken(
                 issuer: _iconfiguration["JWT:Issuer"],
@@ -133,5 +132,7 @@ namespace Webapi.Authenticate
                 throw new NotImplementedException(ex.Message);
             }
         }
+
+        
     }
 }

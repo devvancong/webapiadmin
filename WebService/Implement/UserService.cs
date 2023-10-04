@@ -61,6 +61,8 @@ namespace WebService.Implement
                 var data = await base.Get(exp => exp.Name == userLogin.UserName);
                 if (data != null)
                 {
+                    userLogin.Password = Base64Decode(userLogin.Password);
+
                     bool isPasswordMatch = BCrypt.Net.BCrypt.Verify(userLogin.Password, data.Password);
                     if (isPasswordMatch)
                     {
@@ -98,6 +100,12 @@ namespace WebService.Implement
         {
             model.Password = BCrypt.Net.BCrypt.HashPassword(model.Password);
             return await base.Update(model);
+        }
+
+        private string Base64Decode(string base64EncodedData)
+        {
+            var base64EncodedBytes = System.Convert.FromBase64String(base64EncodedData);
+            return System.Text.Encoding.UTF8.GetString(base64EncodedBytes);
         }
     }
 }

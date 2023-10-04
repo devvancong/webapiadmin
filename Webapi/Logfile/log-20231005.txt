@@ -195,3 +195,13 @@ WHERE [u].[Id] = @__id_0" (0723d8ff)
 ""SELECT TOP(2) [u].[Id], [u].[Age], [u].[Birthday], [u].[Email], [u].[Name], [u].[Password], [u].[Sex]
 FROM [Userviews] AS [u]
 WHERE [u].[Id] = @__id_0" (0723d8ff)
+2023-10-05T06:17:05.8218496+07:00  [INF] Now listening on: "https://localhost:7043" (d826f4b8)
+2023-10-05T06:17:05.8277707+07:00  [INF] Now listening on: "http://localhost:5017" (d826f4b8)
+2023-10-05T06:17:05.8335194+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-10-05T06:17:05.8408588+07:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-10-05T06:17:05.8433876+07:00  [INF] Content root path: "F:\webapiadmin\Webapi" (cc26f24e)
+2023-10-05T06:17:37.6427272+07:00 0HMU5603860EJ:00000009 [INF] Request "POST" "/api/user/login" => 200 (b9f40507)
+2023-10-05T06:17:38.9439947+07:00 0HMU5603860EJ:00000009 [INF] Executed DbCommand ("55"ms) [Parameters=["@__userLogin_UserName_0='?' (Size = 255)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[Id], [u].[Age], [u].[Birthday], [u].[Email], [u].[Name], [u].[Password], [u].[Sex]
+FROM [Userviews] AS [u]
+WHERE [u].[Name] = @__userLogin_UserName_0" (0723d8ff)
